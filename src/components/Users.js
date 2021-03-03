@@ -1,43 +1,20 @@
 import React from 'react';
 
-class Users extends React.Component{
-	constructor(){
-		super();
-		this.state = {
-			users:null
-		}
-	}
+const Users = (props) =>{
+	const {data} = props
+	return(
 	
-	componentDidMount(){
-		fetch('https://reqres.in/api/users').then((resp)=>{
-			
-			resp.json().then((result)=>{
-				//console.warn(result.data);
-				this.setState({users:result.data})
-			})
-			
-		})
-	}
+	<>
 	
-    render(){
-      
+	<h2>{data.name}</h2>
+	<h2>{data.age}</h2>
+	  
+	  <h1>Uers Component</h1>
+	  
+	  </>
+	
+	)
+	
+}
 
-        return(
-           
-			
-			this.state.users ? 
-			this.state.users.map((iteam, i)=>
-				<div>
-				<p>{iteam.name}</p>
-				</div>
-				
-				)
-			
-			:
-			null
-			
-			
-        )
-    }
-} 
 export default Users;

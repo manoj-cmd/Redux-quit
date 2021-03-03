@@ -13,6 +13,7 @@ import RestaurentUpdate from './components/RestaurentUpdate'
 import RestaurentSearch from './components/RestaurentSearch'
 import RestaurentCreate from './components/RestaurentCreate'
 import RestaurentDetals from './components/RestaurentDetals'  
+import HomeContainers from './Containers/HomeContainers'
 
 function App() {
   return (
@@ -44,7 +45,8 @@ function App() {
 	  <RestaurentDetals/>
 	  </Route>
 	   <Route exact path="/"> 
-	  <Users/>
+	   <HomeContainers />
+	 
 	  </Route>
 	   </Router>
     </div>
