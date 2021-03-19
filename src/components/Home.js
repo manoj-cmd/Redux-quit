@@ -1,12 +1,16 @@
 import React from 'react'
 
-class Home extends React.Component{
+
+function Home(props){
 	
-	render(){
+	const data= {name:"manoj gupta", email:"manoj@gmail.com"};
+
 		return(
 		 <div>
-		 <h1> Home Components </h1>
-		 
+		<p>Home Component</p>
+		 <div className="add-to-cart">
+		 <img src={'https://cdn3.iconfinder.com/data/icons/e-commerce-2-1/256/2-512.png'} />
+		 </div>
 		 <div className="cart-wraper">
 		 <div className="image-wraper iteam">
 		 <img src={'https://cdn.shopclues.com/images1/thumbnails/102531/320/320/147617585-102531990-1600242675.jpg'} />
@@ -16,13 +20,18 @@ class Home extends React.Component{
 		<p>$400</p>
 		 </div>
 		  <div className="btn-wraper iteam">
-		  <button> Add Cart </button>
+		  
+		  <div>
+		  </div>
+		  
+		  
+		  <button onClick={()=>{props.alert(data)}}> Add Cart </button>
 		 </div>
 		 </div>
 		 </div>
 		
 		)
-	}
+	
 }
 
 export default Home;

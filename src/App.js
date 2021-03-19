@@ -13,13 +13,22 @@ import RestaurentUpdate from './components/RestaurentUpdate'
 import RestaurentSearch from './components/RestaurentSearch'
 import RestaurentCreate from './components/RestaurentCreate'
 import RestaurentDetals from './components/RestaurentDetals'  
+import Form from './components/Form'  
 import HomeContainers from './Containers/HomeContainers'
 
+function ParentAlert(data){
+	console.log(data)
+	alert(data.name);
+}
+
+
+
 function App() {
+	//let data = "Sunil Gupta"
   return (
     <div className="App">
       <Router>
-	  <ul>
+	  <ul className="navigation">
 	  <li><Link to="/">Home</Link></li>
 	  <li><Link to="/list">List</Link></li>
 	  <li><Link to="/create">Create</Link></li>
@@ -45,8 +54,8 @@ function App() {
 	  <RestaurentDetals/>
 	  </Route>
 	   <Route exact path="/"> 
-	   <HomeContainers />
-	 
+	   <HomeContainers alert={ParentAlert} />
+	  <Form />
 	  </Route>
 	   </Router>
     </div>

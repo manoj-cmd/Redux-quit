@@ -1,7 +1,75 @@
 .App {
   text-align: center;
 }
+.cart-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 303px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+/* Card design css hraer start */
+.navigation{
+	list-style-type:none;
+}
+.navigation li{
+	display:inline;
+	padding:10px;
+}
+.navigation li a{
+	text-decoration:none;
+	color:#000;
+}
+.cart-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 303px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+.add-to-cart img {
+    position: absolute;
+    top: 0;
+    width: 70px;
+    right: 0;
+}
 
+.add-to-cart {
+    position: relative;
+}
+.image-wraper img {
+    height: 100px;
+    width: auto;
+}
+.text-wraper.iteam {
+    font-size: 15px;
+}
+.text-wraper.iteam p {
+    margin: 0;
+    padding: 5px;
+}
+.btn-wraper.iteam {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    margin-left: 20px;
+}
+.btn-wraper.iteam button {
+    display: flex;
+    background-color: #ff0000;
+    border: 0;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    float: left;
+}
+/*   End */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
